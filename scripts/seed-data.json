@@ -1,0 +1,405 @@
+{
+  "teams": {
+    "ay": {
+      "bolge": "Başkent",
+      "name": "Amper Yıldızları",
+      "password": "ay27",
+      "tag": "Sayaç Okuma + Satın Alma"
+    },
+    "dvk": {
+      "bolge": "Toroslar",
+      "name": "Devre Kesiciler",
+      "password": "dvk27",
+      "tag": "Dağıtım Merkezi + İK"
+    },
+    "et": {
+      "bolge": "AYEDAŞ",
+      "name": "Enerji Tilkileri",
+      "password": "et27",
+      "tag": "Çağrı Merkezi + Pazarlama"
+    },
+    "fa": {
+      "bolge": "AYEDAŞ",
+      "name": "Faz Atlayanlar",
+      "password": "fa27",
+      "tag": "Saha Ekipleri + Lojistik"
+    },
+    "gh": {
+      "bolge": "Toroslar",
+      "name": "Güç Hattı",
+      "password": "gh27",
+      "tag": "Yüksek Gerilim + Güvenlik"
+    },
+    "grh": {
+      "bolge": "Toroslar",
+      "name": "Gerilim Hattı",
+      "password": "grh27",
+      "tag": "Ölçüm + Planlama"
+    },
+    "kd": {
+      "bolge": "AYEDAŞ",
+      "name": "Kısa Devreler",
+      "password": "kd27",
+      "tag": "Ölçü Pano + Hukuk"
+    },
+    "se": {
+      "bolge": "Toroslar",
+      "name": "Şimşek Ekibi",
+      "password": "se27",
+      "tag": "Bakım Onarım + Muhasebe"
+    },
+    "st": {
+      "bolge": "AYEDAŞ",
+      "name": "Şalter Takımı",
+      "password": "st27",
+      "tag": "Trafo Merkezi + Operasyon"
+    },
+    "tf": {
+      "bolge": "Başkent",
+      "name": "Topraklama FC",
+      "password": "tf27",
+      "tag": "Kesinti Ekibi + İç İletişim"
+    },
+    "ts": {
+      "bolge": "Başkent",
+      "name": "Trafo Spor",
+      "password": "ts27",
+      "tag": "Arıza-Bakım + Finans"
+    },
+    "vk": {
+      "bolge": "Başkent",
+      "name": "Volt Kartalları",
+      "password": "vk27",
+      "tag": "Şebeke İşletme + İK"
+    }
+  },
+  "matches": {
+    "a1": {
+      "away": "st",
+      "awayScore": 0,
+      "bolge": "AYEDAŞ",
+      "home": "kd",
+      "homeScore": 2,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Gaziantep Küme Sahası",
+      "week": "Hafta 1"
+    },
+    "a2": {
+      "away": "et",
+      "awayScore": 1,
+      "bolge": "AYEDAŞ",
+      "home": "kd",
+      "homeScore": 1,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Gaziantep Küme Sahası",
+      "week": "Hafta 2"
+    },
+    "a3": {
+      "away": "fa",
+      "awayScore": 1,
+      "bolge": "AYEDAŞ",
+      "home": "kd",
+      "homeScore": 0,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Gaziantep Küme Sahası",
+      "week": "Hafta 3"
+    },
+    "a4": {
+      "away": "et",
+      "awayScore": 2,
+      "bolge": "AYEDAŞ",
+      "home": "st",
+      "homeScore": 1,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Gaziantep Küme Sahası",
+      "week": "Hafta 2"
+    },
+    "a5": {
+      "away": "fa",
+      "awayScore": 2,
+      "bolge": "AYEDAŞ",
+      "home": "st",
+      "homeScore": 2,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Gaziantep Küme Sahası",
+      "week": "Hafta 3"
+    },
+    "a6": {
+      "away": "fa",
+      "awayScore": 1,
+      "bolge": "AYEDAŞ",
+      "home": "et",
+      "homeScore": 3,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Gaziantep Küme Sahası",
+      "week": "Hafta 4"
+    },
+    "b1": {
+      "away": "vk",
+      "awayScore": 0,
+      "bolge": "Başkent",
+      "home": "ts",
+      "homeScore": 3,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Ankara Küme Sahası",
+      "week": "Hafta 1"
+    },
+    "b2": {
+      "away": "ay",
+      "awayScore": 1,
+      "bolge": "Başkent",
+      "home": "ts",
+      "homeScore": 2,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Ankara Küme Sahası",
+      "week": "Hafta 2"
+    },
+    "b3": {
+      "away": "tf",
+      "awayScore": 0,
+      "bolge": "Başkent",
+      "home": "ts",
+      "homeScore": 1,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Ankara Küme Sahası",
+      "week": "Hafta 3"
+    },
+    "b4": {
+      "away": "ay",
+      "awayScore": 1,
+      "bolge": "Başkent",
+      "home": "vk",
+      "homeScore": 2,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Ankara Küme Sahası",
+      "week": "Hafta 2"
+    },
+    "b5": {
+      "away": "tf",
+      "awayScore": 1,
+      "bolge": "Başkent",
+      "home": "vk",
+      "homeScore": 1,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Ankara Küme Sahası",
+      "week": "Hafta 3"
+    },
+    "b6": {
+      "away": "tf",
+      "awayScore": 1,
+      "bolge": "Başkent",
+      "home": "ay",
+      "homeScore": 2,
+      "info": "67’",
+      "status": "CANLI",
+      "venue": "Ankara Küme Sahası",
+      "week": "Hafta 4"
+    },
+    "t1": {
+      "away": "dvk",
+      "awayScore": 1,
+      "bolge": "Toroslar",
+      "home": "se",
+      "homeScore": 1,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Adana Küme Sahası",
+      "week": "Hafta 1"
+    },
+    "t2": {
+      "away": "gh",
+      "awayScore": 0,
+      "bolge": "Toroslar",
+      "home": "se",
+      "homeScore": 2,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Adana Küme Sahası",
+      "week": "Hafta 2"
+    },
+    "t3": {
+      "away": "grh",
+      "awayScore": 1,
+      "bolge": "Toroslar",
+      "home": "se",
+      "homeScore": 3,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Adana Küme Sahası",
+      "week": "Hafta 3"
+    },
+    "t4": {
+      "away": "gh",
+      "awayScore": 1,
+      "bolge": "Toroslar",
+      "home": "dvk",
+      "homeScore": 2,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Adana Küme Sahası",
+      "week": "Hafta 2"
+    },
+    "t5": {
+      "away": "grh",
+      "awayScore": 1,
+      "bolge": "Toroslar",
+      "home": "dvk",
+      "homeScore": 1,
+      "info": null,
+      "status": "BİTTİ",
+      "venue": "Adana Küme Sahası",
+      "week": "Hafta 3"
+    },
+    "t6": {
+      "away": "grh",
+      "awayScore": null,
+      "bolge": "Toroslar",
+      "home": "gh",
+      "homeScore": null,
+      "info": "Bugün 20:30",
+      "status": "YAKINDA",
+      "venue": "Adana Küme Sahası",
+      "week": "Hafta 4"
+    }
+  },
+  "players": {
+    "p1": {
+      "assists": 2,
+      "captain": true,
+      "goals": 5,
+      "name": "Serkan Aydın",
+      "position": "Forvet",
+      "team": "Trafo Spor",
+      "yaka": "Mavi Yaka"
+    },
+    "p10": {
+      "assists": 1,
+      "captain": false,
+      "goals": 0,
+      "name": "Seda Arslan",
+      "position": "Kaleci",
+      "team": "grh",
+      "yaka": "Beyaz Yaka"
+    },
+    "p2": {
+      "assists": 4,
+      "captain": true,
+      "goals": 2,
+      "name": "Elif Kurt",
+      "position": "Orta Saha",
+      "team": "ts",
+      "yaka": "Beyaz Yaka"
+    },
+    "p3": {
+      "assists": 1,
+      "captain": false,
+      "goals": 0,
+      "name": "Mehmet Can Öz",
+      "position": "Defans",
+      "team": "vk",
+      "yaka": "Mavi Yaka"
+    },
+    "p4": {
+      "assists": 0,
+      "captain": false,
+      "goals": 0,
+      "name": "Zeynep Acar",
+      "position": "Kaleci",
+      "team": "ay",
+      "yaka": "Beyaz Yaka"
+    },
+    "p5": {
+      "assists": 3,
+      "captain": false,
+      "goals": 1,
+      "name": "Hakan Demir",
+      "position": "Orta Saha",
+      "team": "tf",
+      "yaka": "Mavi Yaka"
+    },
+    "p6": {
+      "assists": 1,
+      "captain": false,
+      "goals": 3,
+      "name": "Burcu Şahin",
+      "position": "Forvet",
+      "team": "kd",
+      "yaka": "Beyaz Yaka"
+    },
+    "p7": {
+      "assists": 2,
+      "captain": true,
+      "goals": 6,
+      "name": "Ahmet Yıldırım",
+      "position": "Forvet",
+      "team": "et",
+      "yaka": "Mavi Yaka"
+    },
+    "p8": {
+      "assists": 5,
+      "captain": true,
+      "goals": 4,
+      "name": "Derya Kaplan",
+      "position": "Orta Saha",
+      "team": "se",
+      "yaka": "Beyaz Yaka"
+    },
+    "p9": {
+      "assists": 0,
+      "captain": false,
+      "goals": 1,
+      "name": "Onur Güneş",
+      "position": "Defans",
+      "team": "dvk",
+      "yaka": "Mavi Yaka"
+    }
+  },
+  "news": {
+    "n1": {
+      "body": "Başkent'te Trafo Spor 3 galibiyetle puan kaybetmeden lider. AYEDAŞ'ta Enerji Tilkileri 7 puanla, Toroslar'da ise Şimşek Ekibi aynı puanla zirvede. Eleme ağacına yükselecek ilk iki sıra için mücadele 4. haftada kızışıyor.",
+      "createdAt": 1791101678537,
+      "featured": true,
+      "tag": "Puan Durumu",
+      "title": "4. Hafta öncesi tablo: Üç bölgede de zirve netleşiyor"
+    },
+    "n2": {
+      "body": "Başkent bölgesinde oynanan karşılaşmada Amper Yıldızları, iç sahada Topraklama FC'yi 2-1 geriye düşürdü. Maçın sonucu, bölgenin alt sıralarındaki puan farkını doğrudan etkileyecek.",
+      "createdAt": 1791015278537,
+      "featured": false,
+      "tag": "Canlı Skor",
+      "title": "Canlı: Amper Yıldızları, Topraklama FC karşısında 67. dakikada 2-1 önde"
+    },
+    "n3": {
+      "body": "Toroslar bölgesinde her iki takımın da henüz galibiyeti yok. Adana Küme Sahası'ndaki karşılaşmanın kaybedeni, bölgede son sırada 4. haftayı tamamlayacak.",
+      "createdAt": 1790928878537,
+      "featured": false,
+      "tag": "Fikstür",
+      "title": "Toroslar'da kritik randevu: Güç Hattı - Gerilim Hattı bu akşam 20:30'da"
+    },
+    "n4": {
+      "body": "Enerji Tilkileri'nin kaptanı Ahmet Yıldırım, attığı 6 golle turnuvanın gol krallığı sıralamasında ilk sırada. Derya Kaplan (Şimşek Ekibi) 5 asistle asist tablosunun lideri.",
+      "createdAt": 1790842478537,
+      "featured": false,
+      "tag": "Oyuncu",
+      "title": "Gol kralı yarışında Ahmet Yıldırım 6 golle önde"
+    },
+    "n5": {
+      "body": "Enerjisa Sahada portalına yeni bir özellik eklendi: takım yöneticileri artık oyuncu ve takım profillerine fotoğraf yükleyebiliyor. Fotoğraflar oyuncu kartlarında ve maç ekranlarında otomatik olarak görünüyor.",
+      "createdAt": 1790756078537,
+      "featured": false,
+      "tag": "Duyuru",
+      "title": "Portal güncellemesi: Oyuncu ve takım profillerine fotoğraf eklendi"
+    }
+  }
+}

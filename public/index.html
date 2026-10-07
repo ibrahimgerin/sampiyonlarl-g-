@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070B12">
+<meta name="color-scheme" content="dark">
+<title>Enerjisa Şampiyonlar Ligi</title>
+<meta name="description" content="Enerjisa Sahada: puan durumu, fikstür, eleme ağacı, haberler ve oyuncu profilleri.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Geist:wght@400..700&family=Geist+Mono:wght@400..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&icon_names=account_tree,arrow_back,arrow_forward,bar_chart,bolt,calendar_month,chevron_right,emoji_events,expand_more,groups,leaderboard,lock,logout,newspaper,search,star,tune,visibility,visibility_off&display=block">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="login-wrap" id="gate">
+  <div class="gate-scene" id="gateScene" aria-hidden="true"></div>
+  <div class="gate-shade" aria-hidden="true"></div>
+  <header class="gate-brand" role="img" aria-label="Enerjisa">
+    <span class="sun"></span>
+    <span class="wordmark">ENERJİ<b>SA</b></span>
+  </header>
+  <div class="gate-row">
+    <div class="hero-copy">
+      <div class="eyebrow">ENERJİSA SAHADA</div>
+      <h1>ŞAMPİYONLAR <em>LİGİ</em></h1>
+      <p>&ldquo;Aynı sahada oynuyoruz, aynı takımdayız.&rdquo;</p>
+    </div>
+    <div class="login-card">
+      <div class="lc-head">
+        <h2>Giriş Yap</h2>
+        <p>Takımını seç, oyuna katıl.</p>
+      </div>
+      <div class="login-tabs">
+        <button class="login-tab" id="loginTabTeam" data-login-tab="team" aria-selected="true">Takım</button>
+        <button class="login-tab" id="loginTabAdmin" data-login-tab="admin" aria-selected="false">Yönetim</button>
+      </div>
+      <div class="login-pane" id="paneTeam">
+        <div class="field">
+          <label for="teamSelect">Takım</label>
+          <div class="inp"><span class="ms" aria-hidden="true">groups</span>
+            <select id="teamSelect"><option value="">Yükleniyor…</option></select>
+            <span class="ms chev" aria-hidden="true">expand_more</span></div>
+        </div>
+        <div class="field">
+          <label for="teamPass">Şifre</label>
+          <div class="inp"><span class="ms" aria-hidden="true">lock</span>
+            <input type="password" id="teamPass" autocomplete="off" placeholder="Şifrenizi girin">
+            <button type="button" class="eye" data-eye="teamPass" aria-label="Şifreyi göster" aria-pressed="false"><span class="ms" aria-hidden="true">visibility</span></button></div>
+        </div>
+        <div class="lc-row">
+          <label class="remember"><input type="checkbox" id="rememberMe" checked> Beni hatırla</label>
+          <button type="button" class="linkbtn" id="forgotBtn">Şifremi unuttum?</button>
+        </div>
+        <button class="login-btn" id="teamLoginBtn">Giriş yap <span class="ms" aria-hidden="true">arrow_forward</span></button>
+      </div>
+      <div class="login-pane" id="paneAdmin" hidden>
+        <div class="field">
+          <label for="adminPass">Yönetim şifresi</label>
+          <div class="inp"><span class="ms" aria-hidden="true">lock</span>
+            <input type="password" id="adminPass" autocomplete="off" placeholder="Şifrenizi girin">
+            <button type="button" class="eye" data-eye="adminPass" aria-label="Şifreyi göster" aria-pressed="false"><span class="ms" aria-hidden="true">visibility</span></button></div>
+        </div>
+        <button class="login-btn" id="adminLoginBtn">Giriş yap <span class="ms" aria-hidden="true">arrow_forward</span></button>
+      </div>
+      <div class="login-error" id="loginError" role="status"></div>
+    </div>
+  </div>
+  <div class="team-strip" id="teamStrip"></div>
+  <div class="login-hint"><span class="hi"><span class="ms" aria-hidden="true">groups</span></span><span><b>Takım şifreni mi unuttun?</b> Küme sorumlundan öğrenebilirsin.</span></div>
+</div>
+
+<div class="app" id="appRoot" hidden>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="mark" role="img" aria-label="Enerjisa"></div>
+        <div class="text">
+          <div class="eyebrow">ENERJİSA SAHADA</div>
+          <div class="name">Şampiyonlar Ligi</div>
+        </div>
+      </div>
+      <nav class="tabs-desktop" id="tabsDesktop" aria-label="Bölümler"></nav>
+      <div class="session-box" id="sessionBox"></div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="view" id="view-tablo">
+      <div class="view-header">
+        <h1>Lig Tablosu</h1>
+        <p>Grup aşaması puan durumu - bitmiş maçlardan hesaplanır</p>
+      </div>
+      <div id="tabloRibbon"></div>
+      <div class="bento"><div id="tabloSpotlight"></div><div class="stat-bento" id="tabloStats"></div></div>
+      <div class="chiprow" id="tabloChips"></div>
+      <div id="tabloBody"></div>
+    </section>
+
+    <section class="view" id="view-haberler" hidden>
+      <div class="view-header">
+        <h1>Haberler</h1>
+        <p>Turnuvadan öne çıkan başlıklar</p>
+      </div>
+      <div id="haberlerBody"></div>
+    </section>
+
+    <section class="view" id="view-haber-detay" hidden>
+      <a href="#haberler" class="backlink" id="haberDetayBack" data-nav="haberler">
+        <span class="ms" aria-hidden="true">arrow_back</span>
+        Haberler
+      </a>
+      <div id="haberDetayBody"></div>
+    </section>
+
+    <section class="view" id="view-fikstur" hidden>
+      <div class="view-header">
+        <h1>Fikstür &amp; Canlı Skor</h1>
+        <p>Bölgeye göre maç takvimi ve sonuçlar</p>
+      </div>
+      <div class="chiprow" id="fiksturChips"></div>
+      <div class="filter-row" id="fiksturFilters"></div>
+      <div id="fiksturBody"></div>
+    </section>
+
+    <section class="view" id="view-bracket" hidden>
+      <div class="view-header">
+        <h1>Eleme Ağacı</h1>
+        <p>Bölge liderleri ve Final Four yolu</p>
+      </div>
+      <div id="bracketBody"></div>
+    </section>
+
+    <section class="view" id="view-oyuncular" hidden>
+      <div class="view-header">
+        <h1>Oyuncu Profilleri</h1>
+      </div>
+      <div class="searchbar">
+        <span class="ms" aria-hidden="true">search</span>
+        <input type="text" id="playerSearch" placeholder="Oyuncu veya takım ara" aria-label="Oyuncu veya takım ara">
+      </div>
+      <div class="chiprow" id="playerChips"></div>
+      <div id="playersBody"></div>
+    </section>
+
+    <section class="view" id="view-detay" hidden>
+      <a href="#oyuncular" class="backlink" id="detayBack">
+        <span class="ms" aria-hidden="true">arrow_back</span>
+        Oyuncular
+      </a>
+      <div id="detayBody"></div>
+    </section>
+
+    <section class="view" id="view-istatistik" hidden>
+      <div class="view-header">
+        <h1>Liderler</h1>
+        <p>Gol ve asist krallığı, en golcü takımlar</p>
+      </div>
+      <div class="chiprow" id="statChips"></div>
+      <div id="statBody"></div>
+    </section>
+
+    <section class="view" id="view-takim" hidden>
+      <a href="#tablo" class="backlink" data-nav="tablo">
+        <span class="ms" aria-hidden="true">arrow_back</span>
+        Lig Tablosu
+      </a>
+      <div id="takimBody"></div>
+    </section>
+
+    <section class="view" id="view-rapor" hidden>
+      <div class="view-header">
+        <h1>Katılım Raporu</h1>
+        <p>Turnuvaya katılımın bölge, yaka ve departman kırılımı</p>
+      </div>
+      <div id="raporBody"></div>
+    </section>
+
+    <section class="view" id="view-admin" hidden>
+      <div class="view-header">
+        <h1>Yönetim</h1>
+        <p>Maç sonuçlarını ve oyuncu istatistiklerini güncelle</p>
+      </div>
+      <div id="adminBody"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" id="bottomNav" aria-label="Bölümler"></nav>
+</div>
+<script src="/app.js" defer></script>
+</body>
+</html>
